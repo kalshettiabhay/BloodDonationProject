@@ -1,2 +1,2 @@
-const url="https://blood-donation-and-emergency-request.onrender.com";
+const url=import.meta.env.VITE_API_URL;
 export default url;

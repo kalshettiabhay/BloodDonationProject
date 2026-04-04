@@ -1,9 +1,12 @@
 import axios from 'axios';
-import url from './url';
+
+const url=import.meta.env.VITE_API_URL;
+
 const api = axios.create({
   baseURL: url,
-  withCredentials: true, // for JWT cookies if used
+  withCredentials: true, 
 });
+
 
 // Interceptors (optional)
 api.interceptors.response.use(

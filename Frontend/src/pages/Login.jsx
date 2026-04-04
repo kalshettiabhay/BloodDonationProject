@@ -21,8 +21,6 @@ const Login = ({ setUser }) => {
         setError("Invalid credentials")
         return;
       }
-      console.log(res.data);
-      
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("role", res.data.role);
       navigate(`/${res.data.role}`);
